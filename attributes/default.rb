@@ -122,3 +122,10 @@ default["tensorflow"]["py36"]["url"]               = node["download_url"] + "/te
 default["tensorflow"]["py36_gpu"]["url"]           = node["download_url"] + "/tensorflow_gpu-" + node["tensorflow"]["version"] + "-cp36-cp36m-manylinux1_x86_64.whl"
 default["tensorflow"]["py27"]["url"]               = node["download_url"] + "/tensorflow-" + node["tensorflow"]["version"] + "-cp27-cp27mu-manylinux1_x86_64.whl"
 default["tensorflow"]["py27_gpu"]["url"]           = node["download_url"] + "/tensorflow_gpu-" + node["tensorflow"]["version"] + "-cp27-cp27mu-manylinux1_x86_64.whl"
+
+default["java"]["jdk_version"]                     = 8
+default["java"]["install_flavor"]                  = "oracle"
+default["java"]["oracle"]["accept_oracle_download_terms"] = true
+# this is for java8 build 181
+default["java"]["jdk"]["8"]["x86_64"]["url"]       = "http://download.oracle.com/otn-pub/java/jdk/8u181-b13/96a7b8442fe848ef90c96a2fad6ed6d1/jdk-8u181-linux-x64.tar.gz"
+default["java"]["jdk"]["8"]["x86_64"]["checksum"]  = "1845567095bfbfebd42ed0d09397939796d05456290fb20a83c476ba09f991d3"
